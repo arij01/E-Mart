@@ -10,7 +10,7 @@ import tn.esprit.ecommerce.Address;
 @Builder
 @Getter
 @Setter
-@Document
+@Document (collection = "customers")
 public class Customer {
 
     @Id

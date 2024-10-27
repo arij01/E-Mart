@@ -1,3 +1,4 @@
+version: "3.3"
 services:
   mongodb:
     image: mongo
@@ -10,13 +11,5 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=arij
       - MONGO_INITDB_ROOT_PASSWORD=arij
 
-  mongo-express:
-    image: mongo-express
-    container_name: mongo_express
-    restart: always
-    ports:
-      - 8081:8081
-    environment:
-      - ME_CONFIG_MONGODB_ADMINUSERNAME=arij
-      - ME_CONFIG_MONGODB_ADMINPASSWORD=arij
-      - ME_CONFIG_MONGODB_SERVER=mongodb
+volumes:
+  mongo:

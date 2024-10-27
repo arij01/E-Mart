@@ -1,6 +1,7 @@
 package tn.esprit.ecommerce;
 
 import lombok.*;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.validation.annotation.Validated;
 
 @AllArgsConstructor
@@ -9,6 +10,7 @@ import org.springframework.validation.annotation.Validated;
 @Getter
 @Setter
 @Validated
+@Document ()
 public class Address {
 
     private String street;
