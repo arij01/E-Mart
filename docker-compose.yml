@@ -4,17 +4,18 @@ services:
     build:
       context: .
     environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery:8761/eureka/
       SPRING_DATA_MONGODB_HOST: mongodb
       SPRING_DATA_MONGODB_PORT: 27017
       SPRING_DATA_MONGODB_DATABASE: customerdb
       SPRING_DATA_MONGODB_USERNAME: arij
       SPRING_DATA_MONGODB_PASSWORD: arij
-#      - eureka.client.serviceUrl.defaultZone=http://discovery:8761/eureka/
+
     ports:
       - "8089:8089"
     depends_on:
       - mongodb
-#      - discovery
+      - discovery
   mongodb:
     image: mongo:latest
     container_name: mongo_db
