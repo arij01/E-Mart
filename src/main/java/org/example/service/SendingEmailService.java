@@ -1,0 +1,9 @@
+package org.example.service;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import jakarta.mail.MessagingException;
+
+public interface SendingEmailService {
+    public void sendEmail(String to, String content);
+    public String createEmailContent(JsonNode node);
+}
