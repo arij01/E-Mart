@@ -1,12 +1,28 @@
 version: "3.3"
 services:
+  customer:
+    build:
+      context: .
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongodb
+      SPRING_DATA_MONGODB_PORT: 27017
+      SPRING_DATA_MONGODB_DATABASE: customerdb
+      SPRING_DATA_MONGODB_USERNAME: arij
+      SPRING_DATA_MONGODB_PASSWORD: arij
+#      - eureka.client.serviceUrl.defaultZone=http://discovery:8761/eureka/
+    ports:
+      - "8089:8089"
+    image: "customer-service"
+    depends_on:
+      - mongodb
+#      - discovery
   mongodb:
-    image: mongo
+    image: mongo:latest
     container_name: mongo_db
     ports:
       - 27017:27017
     volumes:
-      - mongo:/data
+      - mongo:/data/db
     environment:
       - MONGO_INITDB_ROOT_USERNAME=arij
       - MONGO_INITDB_ROOT_PASSWORD=arij
