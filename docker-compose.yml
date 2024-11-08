@@ -1,5 +1,10 @@
 version: "3.3"
 services:
+  discovery:
+    image: netflix/eureka
+    container_name: discovery
+    ports:
+      - "8761:8761"
   customer:
     build:
       context: .
