@@ -12,7 +12,6 @@ services:
 #      - eureka.client.serviceUrl.defaultZone=http://discovery:8761/eureka/
     ports:
       - "8089:8089"
-    image: "customer-service"
     depends_on:
       - mongodb
 #      - discovery
