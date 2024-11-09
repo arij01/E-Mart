@@ -1,0 +1,23 @@
+
+services:
+  spring:
+    build: .
+    ports:
+      - "5555:5555"  # Mappe le port 5000 de l'application au port 5000 de l'hôte
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/db
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: Root123456789
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: Root123456789
+      MYSQL_ROOT_PASSWORD: Root123456789
+    ports:
+      - "3308:3306"  # Mappe le port 3306 de MySQL au port 3306 de l'hôte

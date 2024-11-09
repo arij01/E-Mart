@@ -1,0 +1,6 @@
+{
+  "timestamp": "2024-11-08T18:33:26.016+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/api/register"
+}

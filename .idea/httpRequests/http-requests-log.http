@@ -1,0 +1,81 @@
+GET http://localhost:5555/api/getallproducts?pageNumber=46&searchKey=I58Dhsbt&searchCategory=Gd3JlzyH
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T085022.200.json
+
+###
+
+GET http://localhost:5555/api/admin/getAllProductsForAdmin?pageNumber=44&searchKey=vJNlJRFI&searchCategory=5iONx2Oy
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-08T195825.200.json
+
+###
+
+GET http://localhost:5555/api/getall
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-08T195031.200.json
+
+###
+
+GET http://localhost:5555/api/getall
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-08T194847.200.json
+
+###
+
+GET http://localhost:5555/api/login
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:5555/api/register
+Content-Type: application/json
+Content-Length: 147
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "name": "",
+  "email": "",
+  "pasword": "",
+  "roles": [],
+  "address": {},
+  "userImage": {},
+  "cart": {},
+  "contactNumber": ""
+}
+
+<> 2024-11-08T193326.500.json
+
+###
+
+GET http://localhost:5555/api/getallproducts?pageNumber=48&searchKey=yqAhiMyv&searchCategory=NqnSdoRb
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-08T193314.200.json
+
+###
+

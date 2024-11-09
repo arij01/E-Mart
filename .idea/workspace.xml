@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7551a0df-215f-4105-a79f-9501e7b2ea53" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T193314.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T193326.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T194847.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T195031.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T195825.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T085022.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/configuration/UserDetailServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Rahma-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Rahma-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/configuration/SecurityConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/configuration/UserDetailServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/EmailController$EmailRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/EmailController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/OrderDetailsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/OrderDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/OrderInput.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/repository/CartRepostitory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/repository/OrderDetailsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/repository/ProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/esprit/rahma/RahmaTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DockerFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular/src/app/Component/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular/src/app/Component/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular/src/app/Service/admin.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular/src/app/Service/admin.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular/src/app/Service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular/src/app/Service/product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/Rahma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/Rahma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/configuration/UserDetailServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/EmailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/OrderDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/OrderDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/OrderDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/OrderInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/OrderInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/Orderquantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Orderquantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/ProductImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/ProductImages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/TransactionDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/TransactionDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/UserImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/UserImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/repository/CartRepostitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/CartRepostitory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/repository/OrderDetailsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/OrderDetailsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/OrderDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/OrderDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/ProductServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/buyfurn/Buyfurn/RahmaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/esprit/rahma/RahmaTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/Rahma.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/Rahma.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/configuration/SecurityConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/configuration/SecurityConfiguration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/configuration/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/configuration/UserDetailServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/EmailController$EmailRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/EmailController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/OrderDetailsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/OrderDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/OrderInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/Orderquantity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/Orderquantity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/ProductImages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/ProductImages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/TransactionDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/TransactionDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/UserImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/UserImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/repository/CartRepostitory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/repository/OrderDetailsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/repository/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/CartService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/OrderDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/OrderDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/ProductServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/ProductServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/buyfurn/Buyfurn/RahmaTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RahmaFarhat&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RahmaFarhat/Vente_Couveuse.git&quot;,
+    &quot;accountId&quot;: &quot;c0c3dc2d-81c9-4710-8967-732f1012d02f&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2mCCMvEF8c0i2QZHfv82BGs9SRp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.spring: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "HTTP Request.generated-requests | #118.executor": "Run",
+    "HTTP Request.generated-requests | #121.executor": "Run",
+    "HTTP Request.generated-requests | #124.executor": "Run",
+    "HTTP Request.generated-requests | #125.executor": "Run",
+    "HTTP Request.generated-requests | #127.executor": "Run",
+    "HTTP Request.generated-requests | #128.executor": "Run",
+    "HTTP Request.generated-requests | #129.executor": "Run",
+    "HTTP Request.generated-requests | #130.executor": "Run",
+    "HTTP Request.generated-requests | #131.executor": "Run",
+    "HTTP Request.generated-requests | #132.executor": "Run",
+    "HTTP Request.generated-requests | #133.executor": "Run",
+    "HTTP Request.generated-requests | #136.executor": "Run",
+    "Maven.Rahma [clean,package,-DskipTests].executor": "Run",
+    "Maven.Rahma [clean].executor": "Run",
+    "Maven.Rahma [install:help].executor": "Run",
+    "Maven.Rahma [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Rahma (1).executor": "Debug",
+    "Spring Boot.Rahma.executor": "Run",
+    "git-widget-placeholder": "Event",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Rahma/Downloads/Analyse/spring/spring1/spring/angular",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "C:\\Users\\Rahma\\Downloads\\Analyse\\spring\\spring1\\spring\\angular\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rahma\Downloads\Analyse\spring\spring1\spring\angular" />
+      <recent name="C:\Users\Rahma\Downloads\Analyse\spring\spring1\spring" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install:help" />
+      <command value="mvn clean package -DskipTests " />
+      <command value="docker-compose up --build " />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Rahma">
+    <configuration name="generated-requests | #124" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="124" requestIdentifier="#124" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #131" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="131" requestIdentifier="#131" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #132" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="132" requestIdentifier="#132" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #136" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="136" requestIdentifier="#136" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Rahma" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Rahma" />
+      <target name="&lt;none&gt;:&lt;none&gt;" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.esprit.rahma.Rahma" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rahma" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Rahma" />
+      <target name="&lt;none&gt;:&lt;none&gt;" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.esprit.rahma.Rahma" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rahma" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Rahma" />
+      <target name="&lt;none&gt;:&lt;none&gt;" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.esprit.rahma.Rahma" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.esprit.rahma.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.spring: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="spring" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml.spring: Compose Deployment" />
+      <item itemvalue="HTTP Request.generated-requests | #124" />
+      <item itemvalue="HTTP Request.generated-requests | #136" />
+      <item itemvalue="HTTP Request.generated-requests | #131" />
+      <item itemvalue="HTTP Request.generated-requests | #132" />
+      <item itemvalue="Spring Boot.Rahma" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #124" />
+        <item itemvalue="HTTP Request.generated-requests | #136" />
+        <item itemvalue="HTTP Request.generated-requests | #131" />
+        <item itemvalue="Docker.docker-compose.yml.spring: Compose Deployment" />
+        <item itemvalue="Spring Boot.Rahma" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7551a0df-215f-4105-a79f-9501e7b2ea53" name="Changes" comment="" />
+      <created>1726571128095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726571128095</updated>
+      <workItem from="1726571129384" duration="491000" />
+      <workItem from="1727684958759" duration="392000" />
+      <workItem from="1728947374634" duration="446000" />
+      <workItem from="1729154648361" duration="3894000" />
+      <workItem from="1729522515094" duration="3074000" />
+      <workItem from="1729614876488" duration="1214000" />
+      <workItem from="1730050212404" duration="3699000" />
+      <workItem from="1730065401495" duration="137000" />
+      <workItem from="1730332506771" duration="19000" />
+      <workItem from="1730372481855" duration="60000" />
+      <workItem from="1730887230553" duration="73000" />
+      <workItem from="1731088207149" duration="16000" />
+      <workItem from="1731089875642" duration="12546000" />
+      <workItem from="1731102960987" duration="25000" />
+      <workItem from="1731102993853" duration="790000" />
+      <workItem from="1731104132271" duration="652000" />
+      <workItem from="1731105976989" duration="302000" />
+      <workItem from="1731106569915" duration="490000" />
+      <workItem from="1731109721199" duration="34000" />
+      <workItem from="1731138510413" duration="2872000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
