@@ -4,126 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7551a0df-215f-4105-a79f-9501e7b2ea53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T193314.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T193326.500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T194847.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T195031.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-08T195825.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T085022.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/angular" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/configuration/UserDetailServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Rahma-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Rahma-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/configuration/SecurityConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/configuration/UserDetailServiceImp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/EmailController$EmailRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/EmailController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/OrderDetailsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/ProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/OrderDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/OrderInput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/repository/CartRepostitory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/repository/OrderDetailsRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/repository/ProductRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/repository/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/CartService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/esprit/rahma/RahmaTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DockerFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/src/app/Component/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular/src/app/Component/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/src/app/Service/admin.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular/src/app/Service/admin.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/src/app/Service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular/src/app/Service/product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/Rahma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/Rahma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/configuration/UserDetailServiceImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/EmailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/OrderDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/OrderDetailsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/OrderDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/OrderInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/OrderInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/Orderquantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Orderquantity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/ProductImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/ProductImages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/TransactionDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/TransactionDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/model/UserImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/UserImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/repository/CartRepostitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/CartRepostitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/repository/OrderDetailsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/OrderDetailsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/OrderDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/OrderDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/ProductServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buyfurn/Buyfurn/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/buyfurn/Buyfurn/RahmaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/esprit/rahma/RahmaTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/Rahma.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/Rahma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/configuration/SecurityConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/configuration/SecurityConfiguration$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/configuration/SecurityConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/configuration/UserDetailServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/CartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/EmailController$EmailRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/EmailController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/OrderDetailsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/OrderDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/OrderInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/Orderquantity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/Orderquantity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/ProductImages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/ProductImages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/TransactionDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/TransactionDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/model/UserImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/model/UserImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/repository/CartRepostitory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/repository/OrderDetailsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/repository/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/CartService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/OrderDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/OrderDetailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/ProductServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/esprit/rahma/service/ProductServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/buyfurn/Buyfurn/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/buyfurn/Buyfurn/RahmaTests.class" beforeDir="false" />
+    <list default="true" id="7551a0df-215f-4105-a79f-9501e7b2ea53" name="Changes" comment="removed file">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/EmailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/OrderDetailsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/OrderDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/OrderInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Orderquantity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/TransactionDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/model/UserImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/repository/OrderDetailsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/OrderDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/rahma/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,12 +46,12 @@
     &quot;assignee&quot;: &quot;RahmaFarhat&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/RahmaFarhat/Vente_Couveuse.git&quot;,
-    &quot;accountId&quot;: &quot;c0c3dc2d-81c9-4710-8967-732f1012d02f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/arij01/E-commerce.git",
+    "accountId": "c0c3dc2d-81c9-4710-8967-732f1012d02f"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -183,6 +94,9 @@
     "HTTP Request.generated-requests | #132.executor": "Run",
     "HTTP Request.generated-requests | #133.executor": "Run",
     "HTTP Request.generated-requests | #136.executor": "Run",
+    "HTTP Request.generated-requests | #138.executor": "Run",
+    "HTTP Request.generated-requests | #139.executor": "Run",
+    "HTTP Request.generated-requests | #140.executor": "Run",
     "Maven.Rahma [clean,package,-DskipTests].executor": "Run",
     "Maven.Rahma [clean].executor": "Run",
     "Maven.Rahma [install:help].executor": "Run",
@@ -193,6 +107,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.Rahma (1).executor": "Debug",
     "Spring Boot.Rahma.executor": "Run",
     "git-widget-placeholder": "Event",
@@ -227,13 +142,16 @@
     <configuration name="generated-requests | #124" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="124" requestIdentifier="#124" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #131" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="131" requestIdentifier="#131" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #132" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="132" requestIdentifier="#132" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="generated-requests | #136" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="136" requestIdentifier="#136" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #138" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="138" requestIdentifier="#138" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #139" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="139" requestIdentifier="#139" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #140" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="140" requestIdentifier="#140" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Rahma" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -275,34 +193,21 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.spring: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="spring" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.spring: Compose Deployment" />
+      <item itemvalue="HTTP Request.generated-requests | #138" />
+      <item itemvalue="HTTP Request.generated-requests | #139" />
+      <item itemvalue="HTTP Request.generated-requests | #140" />
       <item itemvalue="HTTP Request.generated-requests | #124" />
       <item itemvalue="HTTP Request.generated-requests | #136" />
-      <item itemvalue="HTTP Request.generated-requests | #131" />
-      <item itemvalue="HTTP Request.generated-requests | #132" />
       <item itemvalue="Spring Boot.Rahma" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #140" />
+        <item itemvalue="HTTP Request.generated-requests | #139" />
+        <item itemvalue="HTTP Request.generated-requests | #138" />
         <item itemvalue="HTTP Request.generated-requests | #124" />
         <item itemvalue="HTTP Request.generated-requests | #136" />
-        <item itemvalue="HTTP Request.generated-requests | #131" />
-        <item itemvalue="Docker.docker-compose.yml.spring: Compose Deployment" />
-        <item itemvalue="Spring Boot.Rahma" />
       </list>
     </recent_temporary>
   </component>
@@ -342,6 +247,7 @@
       <workItem from="1731106569915" duration="490000" />
       <workItem from="1731109721199" duration="34000" />
       <workItem from="1731138510413" duration="2872000" />
+      <workItem from="1731151126340" duration="2419000" />
     </task>
     <servers />
   </component>
@@ -358,5 +264,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removed file" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed file" />
   </component>
 </project>

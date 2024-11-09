@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.esprit.rahma.model.User;
-import com.esprit.rahma.model.UserImage;
 import com.esprit.rahma.repository.UserRepository;
 
 @Service

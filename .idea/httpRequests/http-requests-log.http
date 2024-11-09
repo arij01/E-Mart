@@ -1,3 +1,13 @@
+GET http://localhost:5555/api/user/myOrders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T122309.500.json
+
+###
+
 GET http://localhost:5555/api/getallproducts?pageNumber=46&searchKey=I58Dhsbt&searchCategory=Gd3JlzyH
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
 Accept-Encoding: br, deflate, gzip, x-gzip
