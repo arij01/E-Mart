@@ -18,8 +18,12 @@ public class GatewayApplication {
         return builder.routes()
                 .route("customer-service", r->r.path("/customers/**")
                         .uri("http://localhost:8089/"))
-//                .route("Job", r->r.path("/default/**")
-//                        .uri("http://localhost:9090/"))
+                .route("UsreMicro", r->r.path("/auth/**")
+                        .uri("http://localhost:8081/"))
+                .route("notification-service", r->r.path("/default/**")
+                        .uri("http://localhost:8086/"))
+                .route("payment-service", r->r.path("/payments/**")
+                        .uri("http://localhost:8086/"))
 
                 .build();
     }
