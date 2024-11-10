@@ -1,0 +1,86 @@
+{% extends 'back/base.backend.html' %}
+<title>Edit Activité</title>
+
+{% block main_content %}
+{% load custom_tags %}
+<div class="row gy-4">
+  <div class="col-xl-9 col-lg-8 col-md-12 col-12">
+    <!-- Card -->
+    <div class="card border-0">
+      <!-- Card header -->
+      <div class="card-header">
+        <h4 class="mb-0">Edit Avis</h4>
+      </div>
+      <form method="POST" action="{% url 'edit_activite' activite.id %}" novalidate class="needs-validation" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- Card body -->
+        <div class="card-body">
+          {% for field in form %}
+            <div class="mb-3">
+              {{ field.label_tag }}
+              {{ field|add_class:"form-control text-dark" }} <!-- Appliquer les classes souhaitées -->
+              
+              <!-- Afficher les erreurs de validation spécifiques au champ -->
+              {% if field.errors %}
+                <div class="text-danger">
+                  {% for error in field.errors %}
+                    <p>{{ error }}</p>
+                  {% endfor %}
+                </div>
+              {% endif %}
+              
+              <!-- Attribut requis HTML5 pour validation, sauf pour le champ image -->
+              {% if field.name != 'image' %}
+                <script>
+                  document.querySelector('[name="{{ field.name }}"]').setAttribute('required', 'required');
+                </script>
+              {% endif %}
+            </div>
+          {% endfor %}
+          
+          <!-- Afficher les erreurs générales non liées au champ -->
+          {% if form.non_field_errors %}
+            <div class="text-danger">
+              {% for error in form.non_field_errors %}
+                <p>{{ error }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+          
+          <!-- Bouton de soumission -->
+          <button type="submit" class="btn btn-primary">Edit Activity</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="col-xl-3 col-lg-4 col-md-12 col-12">
+    <div class="d-flex flex-column gap-4">
+      <!-- Card pour informations supplémentaires -->
+      <div class="card">
+        <!-- Card Header -->
+        <div class="card-header d-lg-flex">
+          <h4 class="mb-0">Info Activité</h4>
+        </div>
+        <!-- Liste d'éléments -->
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <span class="text-body">ID Activité</span>
+            <h5 class="mb-0">{{ activite.id }}</h5>
+          </li>
+          <li class="list-group-item">
+            <span class="text-body">Statut</span>
+            <h5 class="mb-0">
+              <span class="badge-dot bg-success d-inline-block me-1"></span>
+              Édition
+            </h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <a href="{% url 'list_all_activites' %}" class="btn btn-outline-secondary mt-3">Retour à la Liste des Activités</a> -->
+
+{% endblock %}

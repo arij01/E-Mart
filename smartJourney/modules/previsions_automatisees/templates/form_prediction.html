@@ -1,0 +1,61 @@
+{% extends 'back/base.backend.html' %}
+<title>
+  {% if is_view %}View Prediction{% elif is_edit %}Edit Prediction{% else %}Add New Prediction{% endif %}
+</title>
+
+{% block main_content %}
+
+<h1>
+  {% if is_view %}View Prediction{% elif is_edit %}Edit Prediction{% else %}Add New Prediction{% endif %}
+</h1>
+
+<form
+  method="POST"
+  action="{% if is_edit and prediction.id %}{% url 'edit_prediction' prediction.id %}{% else %}{% url 'add_prediction' %}{% endif %}"
+  novalidate
+>
+  {% csrf_token %}
+
+  {% for field in form %}
+    <div>
+      {{ field.label_tag }}
+      {{ field }}  <!-- Le champ est rendu ici -->
+      
+      <!-- Display field-specific validation errors -->
+      {% if field.errors %}
+        <div class="text-danger">
+          {% for error in field.errors %}
+            <p>{{ error }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+      <!-- HTML5 required attribute for validation -->
+      {% if not is_view %}
+        <script>
+          document.querySelector('[name="{{ field.name }}"]').setAttribute('required', 'required');
+        </script>
+      {% endif %}
+    </div>
+  {% endfor %}
+  
+  <!-- Display general non-field errors -->
+  {% if form.non_field_errors %}
+    <div class="text-danger">
+      {% for error in form.non_field_errors %}
+        <p>{{ error }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if not is_view %}
+    <!-- Only show the submit button if not in view mode -->
+    <button type="submit">
+      {% if is_edit %}Update Prediction{% else %}Save Prediction{% endif %}
+    </button>
+  {% endif %}
+</form>
+
+<a href="{% url 'list_all_predictions' %}">Back to Predictions List</a>
+
+{% endblock %}

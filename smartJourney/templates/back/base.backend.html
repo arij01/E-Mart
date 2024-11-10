@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}E-Commerce{% endblock %}</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-pzjw8f+ua7Kw1TIqvSt2yKp4fjPIUjErEjwlgfww/Ep9tgV3VXn2DspbVXQHfX9"
+      crossorigin="anonymous"
+    />
+<!-- Include Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Include Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/theme.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'fonts/feather/feather.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/bootstrap-icons/font/bootstrap-icons.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/simplebar/dist/simplebar.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/flatpickr/dist/flatpickr.min.css' %}"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/brand/logo/faviconeSmartJourney.png' %}"
+    />
+
+    <!-- Section for page-specific styles -->
+    {% block extra_css %}{% endblock %}
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+      <!-- Sidebar -->
+      <nav class="navbar-vertical navbar">
+        <div class="vh-100" data-simplebar>
+          <!-- Brand logo -->
+          <a class="navbar-brand" href="{% url 'home' %}">
+           
+          </a>
+
+          <a class="navbar-brand" href="{% url 'home' %}"> </a>
+          <!-- Navbar nav -->
+          <ul class="navbar-nav flex-column" id="sideNavbar">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#navDashboard"
+                aria-expanded="false"
+              >
+                <i class="nav-icon fe fe-home me-2"></i>
+                Dashboard
+              </a>
+
+              <div id="navDashboard" class="collapse">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Produit</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#navItineraires"
+                aria-expanded="false"
+              >
+                <i class="nav-icon fe fe-map me-2"></i>
+                Order
+              </a>
+              <div id="navItineraires" class="collapse">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Créer Itinéraire</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Mes Itinéraires</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#navDestinations"
+                aria-expanded="false"
+              >
+                <i class="nav-icon fe fe-map-pin me-2"></i>
+                Produit
+              </a>
+              <div id="navDestinations" class="collapse">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gérer Destinations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recommandations IA</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="{% url 'list_all_activites' %}"
+                data-bs-toggle="collapse"
+                data-bs-target="#navActivites"
+                aria-expanded="false"
+              >
+                <i class="nav-icon fe fe-activity me-2"></i>
+                Service Apres vente
+              </a>
+              <div id="navActivites" class="collapse">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ajouter Avis  A</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Consulter Avis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Analyse Sentiment</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#navPrevisions"
+                aria-expanded="{% if request.resolver_match.url_name == 'list_all_predictions' or request.resolver_match.url_name == 'add_prediction' %}true{% else %}false{% endif %}"
+              >
+                  <i class="nav-icon fe fe-cloud me-2"></i>
+                  Prévisions
+              </a>
+              <div id="navPrevisions" class="collapse {% if request.resolver_match.url_name == 'list_all_predictions' or request.resolver_match.url_name == 'add_prediction' %}show{% endif %}">
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                          <a class="nav-link {% if request.resolver_match.url_name == 'list_all_predictions' %}active{% endif %}" href="{% url 'list_all_predictions' %}">
+                              Predictions
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link {% if request.resolver_match.url_name == 'add_prediction' %}active{% endif %}" href="{% url 'add_prediction' %}">
+                              Ajouter Données
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Prévisions Personnalisées</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Paramètres et Préférences</a>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#navFAQ"
+                aria-expanded="false"
+              >
+                <i class="nav-icon fe fe-help-circle me-2"></i>
+                FAQ
+              </a>
+              <div id="navFAQ" class="collapse">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gérer FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chatbot d'Assistance</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <main id="page-content">
+        <div class="header">
+          <!-- Top Navbar -->
+          <nav class="navbar-default navbar navbar-expand-lg">
+            <a id="nav-toggle" href="#">
+              <i class="fe fe-menu"></i>
+            </a>
+            <div class="ms-lg-3 d-none d-lg-block">
+              <form class="d-flex align-items-center">
+                <span class="position-absolute ps-3 search-icon">
+                  <i class="fe fe-search"></i>
+                </span>
+                <input
+                  type="search"
+                  class="form-control ps-6"
+                  placeholder="Search Entire Dashboard"
+                />
+              </form>
+            </div>
+            <div class="ms-auto d-flex">
+              <!-- Theme Toggle -->
+              <div class="dropdown">
+                <button
+                  class="btn btn-light btn-icon rounded-circle d-flex align-items-center"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="bi theme-icon-active"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                  <li>
+                    <button class="dropdown-item" data-bs-theme-value="light">
+                      <i class="bi bi-sun-fill"></i>
+                      <span class="ms-2">Light</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" data-bs-theme-value="dark">
+                      <i class="bi bi-moon-stars-fill"></i>
+                      <span class="ms-2">Dark</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item active"
+                      data-bs-theme-value="auto"
+                    >
+                      <i class="bi bi-circle-half"></i>
+                      <span class="ms-2">Auto</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- User Profile -->
+              <ul class="navbar-nav navbar-right-wrap ms-2 d-flex">
+                <li class="dropdown">
+                  <a
+                    class="rounded-circle"
+                    href="#"
+                    role="button"
+                    id="dropdownUser"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div
+                      class="avatar avatar-md avatar-indicators avatar-online"
+                    >
+                      <img
+                        alt="avatar"
+                        src="{% static 'images/avatar/images.png' %}"
+                        class="rounded-circle"
+                      />
+                    </div>
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownUser"
+                  >
+                    <div class="dropdown-item">
+                      <div class="d-flex">
+                        <div
+                          class="avatar avatar-md avatar-indicators avatar-online"
+                        >
+                          <img
+                            alt="avatar"
+                            src="{% static 'images/avatar/images.png' %}"
+                            class="rounded-circle"
+                          />
+                        </div>
+                        <div class="ms-3 lh-1">
+                          <h5 class="mb-1">Annette Black</h5>
+                          <p class="mb-0">annette@smartjourney.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="dropdown-item" href="">
+                          <i class="fe fe-user me-2"></i>
+                          Profile
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="">
+                          <i class="fe fe-settings me-2"></i>
+                          Settings
+                        </a>
+                      </li>
+                      <li>
+                        <form method="POST" action="{% url 'logout' %}">
+                          {% csrf_token %}
+                          <button type="submit" class="dropdown-item">
+                            <i class="fe fe-power me-2"></i>
+                            Sign Out
+                          </button>
+                        </form>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Content Block -->
+        <div class="container-fluid">
+          {% block main_content %}
+          <!-- Main content goes here -->
+          {% endblock %}
+        </div>
+      </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'libs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'libs/simplebar/dist/simplebar.min.js' %}"></script>
+    <script src="{% static 'js/theme.min.js' %}"></script>
+  </body>
+</html>

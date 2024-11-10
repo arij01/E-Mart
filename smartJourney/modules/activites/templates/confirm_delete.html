@@ -1,0 +1,7 @@
+<h1>Delete Activity</h1>
+<p>Are you sure you want to delete "{{ activite.titre }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Yes, delete</button>
+    <a href="{% url 'list_all_activites' %}">Cancel</a>
+</form>

@@ -1,0 +1,112 @@
+{% extends 'front/base.frontend.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+<style>
+    .title-activite {
+        font-size: 1.40rem; /* Ajustez la taille comme vous le souhaitez */
+        font-weight: bold; /* Ajoutez du gras si souhaité */
+    }
+    .center-title {
+        margin-left: 150px; /* Ajustez la valeur selon vos besoins */
+        text-align: center; /* Assurez-vous que le texte reste centré */
+        color:darkslategrey;
+    }
+    .field-label {
+        font-weight: bold;
+    }
+    /* .card-text {
+        text-align: left; /* Alignement à gauche pour tous les textes de carte */
+        /* margin-bottom: 0.5rem; /* Espace entre les paragraphes */
+    /* }
+    .field-label {
+        font-weight: bold; /* Mettre en gras les étiquettes */
+    /* } */ 
+    /* Autres styles que vous souhaitez ajouter */
+</style>
+<section class="container-fluid p-4">
+    <div class="d-flex align-items-center mb-8">
+        <h1 class="mb-0 flex-grow-1 center-title">Liste Des Articles</h1>
+
+        <!-- Formulaire de filtrage par lieu -->
+        <form method="GET" action="{% url 'front_activite' %}" class="d-flex align-items-center ms-auto">
+         
+        </form>
+    </div>
+    <div class="row">
+        {% for activite in activites %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-light">
+                {% if activite.image %}
+                    <img src="{{ activite.image.url }}" class="card-img-top" alt="{{ activite.image }}" style="height: 200px; object-fit: cover;">
+                {% else %}
+                    <img src="{% static 'destination_images/default-image.jpg' %}" class="card-img-top" alt="Default Image" style="height: 200px; object-fit: cover;">
+                {% endif %}
+                <div class="card-body text-center">
+                    <h5 class="card-title title-activite">{{ activite.titre }}</h5>
+                    <p class="card-text"><strong>Description:</strong> {{ activite.description }}</p>
+                    <p class="card-text"><span class="field-label">Date:</span> {{ activite.date|date:"F j, Y" }}</p> <!-- Format de date modifié -->
+                    
+                    <!-- Formulaire pour entrer l'avis -->
+                    <form onsubmit="analyzeSentiment(event, {{ activite.id }});" method="post" action="{% url 'analyze_sentiment' %}">
+                        {% csrf_token %}
+                        <textarea class="form-control mb-2" placeholder="Entrez votre avis ici..." rows="3" name="text" id="user-input-{{ activite.id }}"></textarea>
+                        <button type="submit" class="btn btn-info">Analyser</button>
+                    </form>
+                    <div id="sentiment-result-{{ activite.id }}" class="mt-2"></div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-warning text-center" role="alert">Aucune activité disponible.</div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<script>
+    async function analyzeSentiment(event, activiteId) {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const resultContainer = document.getElementById(`sentiment-result-${activiteId}`);
+    const userInput = document.getElementById(`user-input-${activiteId}`).value;
+
+    if (!userInput) {
+        resultContainer.innerText = "Veuillez entrer un avis avant d'analyser.";
+        return;
+    }
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            // Afficher le résultat formaté en HTML
+            resultContainer.innerHTML = result.sentiment;
+        } else {
+            resultContainer.innerText = result.error || "Erreur d'analyse.";
+        }
+    } catch (error) {
+        console.error("Erreur lors de l'analyse de l'avis:", error);
+        resultContainer.innerText = "Erreur d'analyse.";
+    }
+}
+</script>
+{% endblock %}
+
+
+
+
+
+
+

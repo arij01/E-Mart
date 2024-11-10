@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}E-Commerce{% endblock %}</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-pzjw8f+ua7Kw1TIqvSt2yKp4fjPIUjErEjwlgfww/Ep9tgV3VXn2DspbVXQHfX9"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/theme.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'fonts/feather/feather.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/bootstrap-icons/font/bootstrap-icons.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/simplebar/dist/simplebar.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/flatpickr/dist/flatpickr.min.css' %}"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/brand/logo/faviconeSmartJourney.png' %}"
+    />
+
+    <!-- Section for page-specific styles -->
+    {% block extra_css %}{% endblock %}
+  </head>
+
+  <body>
+    <!-- Content body will be injected here -->
+    <!-- <div class="container"> -->
+      {% block content %}
+      <!-- Main content will be injected here -->
+      {% endblock %}
+    <!-- </div> -->
+
+    <!-- Include Bootstrap JS and other necessary scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXlJ91hMoQN34fWIlb+PnyNvH5tbVoI3sL0z8aDMPnINl+8mWgOrL6XjxDsy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgA4+gI1MRt8STfkrEYQCOF8tL5BOB5p4PpBB8FZJcv7IK4pAIt"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Section for page-specific scripts -->
+    {% block extra_js %}{% endblock %}
+  </body>
+</html>

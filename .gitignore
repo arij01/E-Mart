@@ -1,0 +1,69 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Django specific files
+*.log
+db.sqlite3
+*.pot
+*.py[cod]
+__pycache__/
+*.sqlite3
+*/migrations/*
+
+# If you're using PostgreSQL or MySQL, you might have different database names
+*.pgdata
+*.pg_dump
+*.sql
+
+# Ignore static files (if you're using collectstatic)
+staticfiles/
+media/
+
+# Ignore virtual environments
+env/
+venv/
+ENV/
+.venv/
+.pipenv/
+
+# Environment variables
+.env
+*.env
+
+# Node.js modules (if you're using Node.js for frontend dependencies)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Operating system generated files #
+##############################
+.DS_Store              # macOS
+Thumbs.db              # Windows
+desktop.ini            # Windows
+*.swp                  # vim
+*~
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest cache
+.pytest_cache/

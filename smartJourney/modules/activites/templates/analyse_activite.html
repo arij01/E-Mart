@@ -1,0 +1,72 @@
+{% extends 'front/base.frontend.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+<section class="container-fluid p-4">
+    <h1 class="mb-4 text-center">Liste Des Avis</h1>
+    <div class="row">
+        {% for activite in activites %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-light">
+                {% if activite.image %}
+                    <img src="{{ activite.image.url }}" class="card-img-top" alt="{{ activite.image }}" style="height: 200px; object-fit: cover;">
+                {% else %}
+                    <img src="{% static 'destination_images/default-image.jpg' %}" class="card-img-top" alt="Default Image" style="height: 200px; object-fit: cover;">
+                {% endif %}
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ activite.titre }}</h5>
+                    <p class="card-text"><strong>Description:</strong> {{ activite.description }}</p>
+                    <p class="card-text"><strong>Date:</strong> {{ activite.date }}</p>
+                    
+                    <!-- Formulaire pour entrer l'avis -->
+                    <form method="post" action="{% url 'analyze_sentiment' %}">
+                        {% csrf_token %}
+                        <textarea class="form-control mb-2" placeholder="Entrez votre avis ici..." rows="3" name="text" id="user-input-{{ activite.id }}"></textarea>
+                        <button type="submit" class="btn btn-primary">Analyser</button>
+                    </form>
+                    <div id="sentiment-result-{{ activite.id }}" class="mt-2"></div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-warning text-center" role="alert">Aucune activité disponible.</div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<script>
+    // Vous pouvez garder le script JavaScript si vous voulez analyser le sentiment de manière asynchrone
+    async function analyzeSentiment(activiteId) {
+        const userInput = document.getElementById(`user-input-${activiteId}`).value;
+
+        if (!userInput) {
+            document.getElementById(`sentiment-result-${activiteId}`).innerText = "Veuillez entrer un avis avant d'analyser.";
+            return;
+        }
+
+        try {
+            const response = await fetch('/analyze-sentiment/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'  // Inclure CSRFToken si nécessaire
+                },
+                body: JSON.stringify({ text: userInput }),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                document.getElementById(`sentiment-result-${activiteId}`).innerText = `Sentiment: ${result.sentiment}`;
+            } else {
+                document.getElementById(`sentiment-result-${activiteId}`).innerText = result.error || "Erreur d'analyse.";
+            }
+        } catch (error) {
+            console.error("Erreur lors de l'analyse de l'avis:", error);
+            document.getElementById(`sentiment-result-${activiteId}`).innerText = "Erreur d'analyse.";
+        }
+    }
+</script>
+{% endblock %}

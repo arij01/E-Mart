@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-pzjw8f+ua7Kw1TIqvSt2yKp4fjPIUjErEjwlgfww/Ep9tgV3VXn2DspbVXQHfX9"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/theme.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'fonts/feather/feather.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/bootstrap-icons/font/bootstrap-icons.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/simplebar/dist/simplebar.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/flatpickr/dist/flatpickr.min.css' %}"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/brand/logo/faviconeSmartJourney.png' %}"
+    />
+
+    <!-- Section for page-specific styles -->
+    {% block extra_css %}{% endblock %}
+  </head>
+
+  <div class="container px-0 border-bottom mt-2 pb-2">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex align-items-center gap-4">
+          <div class="d-flex gap-2 align-items-center lh-0 d-none d-md-block">
+            <span class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                class="bi bi-clock-history"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                />
+                <path
+                  d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                />
+                <path
+                  d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                />
+              </svg>
+            </span>
+            <span class="fs-6 fw-medium">Time: Mon-Sat 9:00-18:00</span>
+          </div>
+          <div class="d-flex gap-2 align-items-center lh-0">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                class="bi bi-telephone-forward"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </span>
+            <span class="fs-6 fw-medium">+21658822986</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="d-flex align-items-center gap-4">
+          <div class="d-flex gap-2 align-items-center lh-0 d-none d-md-block">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                />
+              </svg>
+            </span>
+            <a href="login" class="text-inherit fs-5 fw-medium">Signup</a>
+          </div>
+          <div class="d-flex gap-2 align-items-center lh-0">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-in-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                />
+              </svg>
+            </span>
+            <a href="login" class="text-inherit fs-5 fw-medium">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container px-0">
+      <a class="navbar-brand" href="login">
+      
+      </a>
+
+      <!-- Mobile view nav wrap -->
+      <div class="ms-auto d-flex align-items-center order-lg-3">
+        <div class="d-flex gap-2 align-items-center">
+          <a
+            href="#langaugeModal"
+            class="text-inherit me-2"
+            data-bs-toggle="modal"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-globe text-gray-500"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+              />
+            </svg>
+          </a>
+          <a href="login" class="btn btn-outline-dark">Login</a>
+          <a href="login" class="btn btn-dark d-none d-md-block">Join Now</a>
+        </div>
+      </div>
+
+      <!-- Navbar toggle button for mobile -->
+      <button
+        class="navbar-toggler collapsed ms-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar-default"
+        aria-controls="navbar-default"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="icon-bar top-bar mt-0"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <!-- Collapse menu -->
+      <div class="collapse navbar-collapse" id="navbar-default">
+        <ul class="navbar-nav mt-3 mt-lg-0 mx-xxl-auto">
+          <!-- Dropdowns for different modules -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarItineraires"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Produit</a
+            >
+            <ul
+              class="dropdown-menu dropdown-menu-arrow"
+              aria-labelledby="navbarItineraires"
+            >
+              <li><a class="dropdown-item" href="#">Créer Itinéraire</a></li>
+              <li><a class="dropdown-item" href="#">Mes Itinéraires</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDestinations"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Order</a
+            >
+            <ul
+              class="dropdown-menu dropdown-menu-arrow"
+              aria-labelledby="navbarDestinations"
+            >
+              <li><a class="dropdown-item" href="#">Gérer Destinations</a></li>
+              <li><a class="dropdown-item" href="#">Recommandations IA</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarActivites"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >COMMING-SOON</a
+            >
+            <ul
+              class="dropdown-menu dropdown-menu-arrow"
+              aria-labelledby="navbarActivites"
+            >
+              <li><a class="dropdown-item" href="{% url 'front_activite' %}">Liste des Articles</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Analyse Sentiment</a></li> -->
+            </ul>
+          </li>
+
+     
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarFaq"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >FAQ</a
+            >
+            <ul
+              class="dropdown-menu dropdown-menu-arrow"
+              aria-labelledby="navbarFaq"
+            >
+              <li><a class="dropdown-item" href="#">Gérer FAQ</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Chatbot d'Assistance</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <div class="content">
+      {% block content %}
+      <!-- This is where the content of other pages will be inserted -->
+      {% endblock %}
+    </div>
+
+    <!-- Corrected the static tag for JS files -->
+    <script src="{% static 'js/theme.min.js' %}"></script>
+    <!-- Section for page-specific scripts -->
+  </body>
+
+  <footer class="footer bg-dark-stable py-8">
+    <div class="container">
+      <div class="row gy-6 gy-xl-0 pb-8">
+        <div class="col-xl-3 col-lg-12 col-md-6 col-12">
+          <div class="d-flex flex-column gap-4">
+            <div>
+            
+            </div>
+            <p class="mb-0">
+              votre destination en ligne pour des achats rapides, sécurisés et pratiques ! Nous proposons une large sélection de produits de qualité pour répondre à tous vos besoins, que vous cherchiez les dernières tendances de la mode, des gadgets technologiques, ou des articles de maison. Profitez d'une expérience d'achat exceptionnelle, 
+              avec des descriptions détaillées, des avis clients authentiques, et des options de livraison flexibles. 
+            </p>
+            <div class="d-flex gap-2">
+              <a
+                href="#langaugeModal"
+                class="btn btn-outline-secondary"
+                data-bs-toggle="modal"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-globe"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+                    />
+                  </svg>
+                </span>
+                <span class="ms-2">English</span>
+              </a>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-secondary btn-icon rounded-circle d-flex align-items-center"
+                  type="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                  aria-label="Toggle theme (auto)"
+                >
+                  <i class="bi theme-icon-active"></i>
+                  <span class="visually-hidden bs-theme-text"
+                    >Toggle theme</span
+                  >
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-end shadow"
+                  aria-labelledby="bs-theme-text"
+                  data-bs-theme="dark"
+                >
+                  <li>
+                    <button
+                      type="button"
+                      class="dropdown-item d-flex align-items-center"
+                      data-bs-theme-value="light"
+                      aria-pressed="false"
+                    >
+                      <i class="bi theme-icon bi-sun-fill"></i>
+                      <span class="ms-2">Light</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="dropdown-item d-flex align-items-center"
+                      data-bs-theme-value="dark"
+                      aria-pressed="false"
+                    >
+                      <i class="bi theme-icon bi-moon-stars-fill"></i>
+                      <span class="ms-2">Dark</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="dropdown-item d-flex align-items-center active"
+                      data-bs-theme-value="auto"
+                      aria-pressed="true"
+                    >
+                      <i class="bi theme-icon bi-circle-half"></i>
+                      <span class="ms-2">Auto</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-6">
+          <div class="d-flex flex-column gap-3">
+            <span class="text-white-stable">Company</span>
+            <ul
+              class="list-unstyled mb-0 d-flex flex-column nav nav-footer nav-x-0"
+            >
+              <li>
+                <a href="#!" class="nav-link">About us</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">Contact us</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">News and Blogs</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">Career</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">Investors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-6">
+          <div class="d-flex flex-column gap-3">
+            <span class="text-white-stable">Community</span>
+            <ul
+              class="list-unstyled mb-0 d-flex flex-column nav nav-footer nav-x-0"
+            >
+              <li>
+                <a href="#!" class="nav-link">Help and Support</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">Affiliate</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">Blog</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">Geeks Business</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+         
+           
+   
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+          <div class="d-flex flex-column gap-5">
+            <div class="d-flex flex-column gap-3">
+              <span class="text-white-stable">Contact</span>
+              <ul
+                class="list-unstyled mb-0 d-flex flex-column nav nav-footer nav-x-0"
+              >
+                <li>
+                  Toll free:
+                  <span class="fw-semibold">+21658822986</span>
+                </li>
+                <li>
+                  Time:
+                  <span class="fw-semibold">9AM to 8:PM IST</span>
+                </li>
+                <li>
+                  Email:
+                  <span class="fw-semibold">example@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex flex-row gap-2">
+              <a href="#">
+                <img
+                  src="{% static 'images/svg/appstore.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="{% static 'images/svg/playstore.svg' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row align-items-center g-0 border-top border-gray-800 pt-3 flex-column gap-1 flex-lg-row gap-lg-0"
+      >
+        <!-- Desc -->
+        <div class="col-lg-6 col-12 text-center text-md-start">
+          <span>
+            ©
+            <span id="copyright">
+              <script>
+                document
+                  .getElementById("copyright")
+                  .appendChild(
+                    document.createTextNode(new Date().getFullYear())
+                  );
+              </script>
+            </span>
+            Bitech
+          </span>
+        </div>
+        <!-- Links -->
+        <div class="col-12 col-lg-6">
+          <nav
+            class="nav nav-footer justify-content-center justify-content-md-start justify-content-lg-end"
+          >
+            <a class="nav-link active" href="#!">Terms of use</a>
+            <a class="nav-link" href="#!">Cookies Settings</a>
+            <a class="nav-link" href="#!">Privacy policy</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
