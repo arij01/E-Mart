@@ -1,0 +1,44 @@
+server:
+  port: 8070
+
+
+spring:
+  application:
+    name: order-service
+    rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+      virtual-host: /
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/order
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  cloud:
+    config:
+      enabled: false
+  config:
+    import-check:
+      enabled: false
+
+application:
+  config:
+    customer-url: http://localhost:8222/customers
+    payment-url: http://localhost:8222/payments
+    product-url: http://localhost:8222/products
+
+rabbitmq:
+  queue:
+    name: notification-queue
+  exchange:
+    name: notification-exchange
+  routing:
+    key: notification-key
