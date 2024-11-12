@@ -1,0 +1,248 @@
+services:
+  discovery:
+    build: ./discovery
+    ports:
+      - "8761:8761"
+    image: eureka
+    networks:
+      - eureka-network
+
+  customer:
+    build: ./customer-service
+    image: "customer.jar"
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery:8761/eureka/
+      SPRING_DATA_MONGODB_HOST: mongodb
+      SPRING_DATA_MONGODB_PORT: 27017
+      SPRING_DATA_MONGODB_DATABASE: customerdb
+      SPRING_DATA_MONGODB_USERNAME: arij
+      SPRING_DATA_MONGODB_PASSWORD: arij
+
+    ports:
+      - "8089:8089"
+    depends_on:
+      - mongodb
+      - discovery
+    networks:
+      - eureka-network
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=arij
+      - MONGO_INITDB_ROOT_PASSWORD=arij
+    networks:
+      - eureka-network
+
+  docker_mysql_1:
+    image: mysql:5.6
+    environment:
+      MYSQL_DATABASE: ProduitDB
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - eureka-network
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    networks:
+      - eureka-network
+
+  docker_mysql_2:
+    image: mysql:5.6
+    environment:
+      MYSQL_DATABASE: userdb
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    ports:
+      - "3301:3306"
+    networks:
+      - eureka-network
+
+  docker_mysql_3:
+    image: mysql:5.6
+    environment:
+      MYSQL_DATABASE: paymentdb
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    ports:
+      - "3302:3306"
+    networks:
+      - eureka-network
+
+  docker_mysql_4:
+    image: mysql:5.6
+    environment:
+      MYSQL_DATABASE: notificationdb
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    ports:
+      - "3304:3306"
+    networks:
+      - eureka-network
+
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CONNECTIONS_MAX_IDLE_MS: 60000
+    ports:
+      - "9092:9092"
+    volumes:
+      - kafka_data:/var/lib/kafka/data
+    networks:
+      - eureka-network
+
+  Produit:
+    build: ./Produit
+    image: "produit.jar"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://docker_mysql_1:3306/ProduitDB?autoReconnect=true&useSSL=false
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery:8761/eureka/
+    ports:
+      - "5000:5000"
+    depends_on:
+      - docker_mysql_1
+      - discovery
+    networks:
+      - eureka-network
+
+  User:
+    build: ./User
+    image: "user.jar"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://docker_mysql_2:3306/userdb?autoReconnect=true&useSSL=false
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery:8761/eureka/
+    ports:
+      - "8081:8081"
+    depends_on:
+      - docker_mysql_2
+      - discovery
+    networks:
+      - eureka-network
+
+  Payment:
+    build: ./WebPayment
+    image: "payment.jar"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://docker_mysql_3:3306/paymentdb?autoReconnect=true&useSSL=false
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery:8761/eureka/
+    ports:
+      - "8090:8090"
+    depends_on:
+      - docker_mysql_3
+      - discovery
+    networks:
+      - eureka-network
+  postgresql:
+    container_name: ms_pg_sql
+    image: postgres
+    environment:
+      POSTGRES_USER: yahya
+      POSTGRES_PASSWORD: yahya
+      POSTGRES_DB: order
+
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - eureka-network
+    restart: unless-stopped
+
+  gateway:
+    build: ./gateway
+    image: "gateway.jar"
+    ports:
+      - "8222:8222"
+    networks:
+      - eureka-network
+    environment:
+      - KEYCLOAK_AUTH_URL=http://keycloak:8080/auth
+      - KEYCLOAK_REALM=your-realm
+      - KEYCLOAK_CLIENT_ID=your-client-id
+      - KEYCLOAK_CLIENT_SECRET=your-client-secret
+    depends_on:
+      - keycloak
+      - discovery
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+    ports:
+        - "8080:8080"
+    command:
+      - start-dev
+
+
+  notification-service:
+    build: ./notification
+    image: "notification_service.jar"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://docker_mysql_4:3306/notificationdb?autoReconnect=true&useSSL=false
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery:8761/eureka/
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: guest
+      SPRING_RABBITMQ_PASSWORD: guest
+      SPRING_MAIL_HOST: smtp.gmail.com
+      SPRING_MAIL_PORT: 587
+      SPRING_MAIL_USERNAME: e.commerce.0.app@gmail.com
+      SPRING_MAIL_PASSWORD: ngfwtoxbetnclubz
+      SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH: true
+      SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE: true
+      MAIL_SMTP_TIMEOUT: 5001
+
+    ports:
+      - "8086:8086"
+    depends_on:
+      - discovery
+      - docker_mysql_4
+    networks:
+      - eureka-network
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq-server
+    ports:
+      - "5672:5672"    # Port pour RabbitMQ
+      - "15672:15672"  # Port pour le management Web UI (facultatif)
+    networks:
+      - eureka-network
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+
+networks:
+  eureka-network:
+    driver: bridge
+volumes:
+  mongo:
+    driver: local
+  kafka_data:
+    driver: local
+  mysql_data:
+    driver: local
+  postgres:
+  pgadmin:
